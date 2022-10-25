@@ -1,0 +1,14 @@
+.nav_list{
+    list-style: none;
+}
+.nav_list > li{
+    display: inline-block;
+    margin-right: 45px;
+}
+.nav_list > li:last-child{
+    margin-right: 0;
+}
+.nav_list > li > a{
+    text-decoration: none;
+    color:#ffffff;
+}

@@ -1,0 +1,10 @@
+.main_block{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    's c c c';
+}
+.container{
+    max-width: 1540px;
+    margin: 0 auto;
+}

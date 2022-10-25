@@ -1,0 +1,22 @@
+.news{
+    display: grid;
+    grid-template-columns:repeat(4, 25%);
+}
+.form_add{
+    background-color: azure;
+    padding: 30px;
+}
+h3{
+    font-size: 16px;
+}
+.form_add input{
+    width: 200px;
+    padding: 10px 10px;
+    border: 1px solid #0f0f1e;
+    margin-bottom: 10px;
+}
+.form_add button{
+    padding: 10px 10px;
+    border: 1px solid #0f0f1e;
+
+}

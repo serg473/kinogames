@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import s from './App.module.css';
+import Content from "./components/Content/Content";
+import Header from "./components/Header/Header";
+import Sidebar from "./components/Sidebar/Sidebar";
+import c from "./components/Content/Content.module.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = (props) => {
+    return (
+        <div className={s.App}>
+            <Header/>
+            <main className={c.main}>
+                <div className={`${s.container} ${s.main_block}`}>
+                    <Sidebar/>
+                    <Content dispatch = {props.dispatch} state = {props.store} />
+                </div>
+            </main>
+        </div>
+    );
 }
 
 export default App;
