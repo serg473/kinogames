@@ -1,4 +1,4 @@
-import reducerSerial from "./reducerSerial";
+import reducerFilms from "./reducerFilms";
 
 let store = {
     _state: {
@@ -406,7 +406,7 @@ let store = {
         return this._state;
     },
     dispatch(action){
-        this._state.data.dataFilmsItems.genre = reducerSerial(this._state.data.dataFilmsItems.genre, action);
+        this._state.data.dataFilmsItems.genre = reducerFilms(this._state.data.dataFilmsItems.genre, action);
         this.callSubscribe(this._state);
     },
     subscribe(observer){

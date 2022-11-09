@@ -1,0 +1,6 @@
+.card_item{
+    flex: 0 0 25%;
+}
+h4{
+    max-width: 255px;
+}

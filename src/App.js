@@ -11,7 +11,7 @@ const App = (props) => {
             <main className={c.main}>
                 <div className={`${s.container} ${s.main_block}`}>
                     <Sidebar/>
-                    <Content dispatch = {props.dispatch} state = {props.store} />
+                    <Content/>
                 </div>
             </main>
         </div>
